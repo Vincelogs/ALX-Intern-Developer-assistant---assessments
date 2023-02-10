@@ -1,11 +1,17 @@
 #!/usr/bin/python3
-"""program that finds the first number of teaspoons that will make a cake too sweet"""
+"""
+    program that finds the
+    first number of teaspoons
+    that will make a cake too sweet
+"""
+
 
 def isTooSweet(i):
     if i > n:
         return True
     else:
         return False
+
 
 def find_x(n):
     low = 0
@@ -18,6 +24,7 @@ def find_x(n):
             low = mid + 1
     return low
 
-n = 10 # Number of teaspoons of sugar required by the recipe
+
+n = 10  # Number of teaspoons of sugar required by the recipe
 x = find_x(n)
 print("The first number of teaspoons that will make the cake too sweet:", x)
